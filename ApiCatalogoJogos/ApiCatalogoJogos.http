@@ -1,0 +1,50 @@
+@ApiCatalogoJogos_HostAddress = http://localhost:5140
+
+GET {{ApiCatalogoJogos_HostAddress}}/api/v1/CicloDeVidaID
+Accept: application/json
+
+###
+
+GET {{ApiCatalogoJogos_HostAddress}}/api/Jogos?pagina=1&quantidade=5
+Accept: application/json
+
+###
+
+GET {{ApiCatalogoJogos_HostAddress}}/api/Jogos/0ca314a5-9282-45d8-92c3-2985f2a9fd04
+Accept: application/json
+
+###
+
+POST {{ApiCatalogoJogos_HostAddress}}/api/Jogos
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "string",
+  "produtora": "string",
+  "preco": 1000
+}
+
+###
+
+PUT {{ApiCatalogoJogos_HostAddress}}/api/Jogos/0ca314a5-9282-45d8-92c3-2985f2a9fd04
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "string1",
+  "produtora": "string1",
+  "preco": 1000
+}
+
+###
+
+PATCH {{ApiCatalogoJogos_HostAddress}}/api/Jogos/0ca314a5-9282-45d8-92c3-2985f2a9fd04/preco/1000
+Accept: application/json
+
+###
+
+DELETE {{ApiCatalogoJogos_HostAddress}}/api/Jogos/0ca314a5-9282-45d8-92c3-2985f2a9fd04
+Accept: application/json
+
+###
